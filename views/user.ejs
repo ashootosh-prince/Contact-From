@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message</title>
+  </head>
+  <body>
+    <h1>All User</h1>
+    <form method="GET" action="/user/new">
+      <button>Create New Message</button>
+    </form>
+    <ul>
+      <% for(let user of allUser) { %>
+      <li><a href="/user/ <%= user._id %>"><%= user.name %></a></li>
+      <% } %>
+    </ul>
+  </body>
+</html>

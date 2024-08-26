@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+</head>
+<body>
+    <h1>Create a New Message</h1>
+    <form method="POST" action="/user">
+        <input name="user[name]" type="text" placeholder="Enter your name" required>
+        <br />
+        <input name="user[email]" type="email" placeholder="Enter your email" required>
+        <br />
+        <textarea name="user[message]" type="text" placeholder="Write you message" required></textarea>
+        <br />
+        <button>Save</button>
+    </form>
+    
+</body>
+</html>
